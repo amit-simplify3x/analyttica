@@ -24,7 +24,7 @@ export const NotificationSimulator = () => {
   }, [isRunning, addNotification]);
 
   return (
-    <div className="flex gap-3">
+    <div className="flex flex-col md:flex-row gap-3">
       <button
         onClick={() => {
           const template = notificationTemplates[Math.floor(Math.random() * notificationTemplates.length)];
